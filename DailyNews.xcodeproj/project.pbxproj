@@ -3,27 +3,67 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A83E12DE23EC10BD0FF28B6 /* Pods_DailyNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86164F50614177F03DA396DF /* Pods_DailyNews.framework */; };
 		D49253E5280AF0BD00E98E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49253E4280AF0BD00E98E9F /* AppDelegate.swift */; };
-		D49253E7280AF0BD00E98E9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49253E6280AF0BD00E98E9F /* SceneDelegate.swift */; };
-		D49253E9280AF0BD00E98E9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49253E8280AF0BD00E98E9F /* ViewController.swift */; };
-		D49253EC280AF0BD00E98E9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49253EA280AF0BD00E98E9F /* Main.storyboard */; };
 		D49253EE280AF0CA00E98E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D49253ED280AF0CA00E98E9F /* Assets.xcassets */; };
 		D49253F1280AF0CA00E98E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49253EF280AF0CA00E98E9F /* LaunchScreen.storyboard */; };
+		D49253FC280AF12400E98E9F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49253FA280AF12400E98E9F /* SignUpViewController.swift */; };
+		D49253FD280AF12400E98E9F /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49253FB280AF12400E98E9F /* SignUpViewController.xib */; };
+		D4925404280AF40800E98E9F /* MainTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4925403280AF40800E98E9F /* MainTBC.swift */; };
+		D4925409280AF45500E98E9F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4925407280AF45500E98E9F /* HomeViewController.swift */; };
+		D492540A280AF45500E98E9F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4925408280AF45500E98E9F /* HomeViewController.xib */; };
+		D492540E280AF46F00E98E9F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D492540C280AF46F00E98E9F /* SearchViewController.swift */; };
+		D492540F280AF46F00E98E9F /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D492540D280AF46F00E98E9F /* SearchViewController.xib */; };
+		D4925413280AF48A00E98E9F /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4925411280AF48A00E98E9F /* BookmarkViewController.swift */; };
+		D4925414280AF48A00E98E9F /* BookmarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4925412280AF48A00E98E9F /* BookmarkViewController.xib */; };
+		D4925418280AF49B00E98E9F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4925416280AF49B00E98E9F /* SettingsViewController.swift */; };
+		D4925419280AF49B00E98E9F /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4925417280AF49B00E98E9F /* SettingsViewController.xib */; };
+		D492541F280D25D000E98E9F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D492541D280D25D000E98E9F /* SignInViewController.swift */; };
+		D4925420280D25D000E98E9F /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D492541E280D25D000E98E9F /* SignInViewController.xib */; };
+		D4E5F4EA280FD40100AA4C11 /* buttonColor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E5F4E9280FD40100AA4C11 /* buttonColor.xcassets */; };
+		D4E5F4F028109CF100AA4C11 /* ResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F4EE28109CF100AA4C11 /* ResetViewController.swift */; };
+		D4E5F4F128109CF100AA4C11 /* ResetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E5F4EF28109CF100AA4C11 /* ResetViewController.xib */; };
+		D4E5F4F62810A84D00AA4C11 /* VerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F4F42810A84D00AA4C11 /* VerifyViewController.swift */; };
+		D4E5F4F72810A84D00AA4C11 /* VerifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E5F4F52810A84D00AA4C11 /* VerifyViewController.xib */; };
+		D4E5F4FC2810B3BA00AA4C11 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F4FA2810B3BA00AA4C11 /* NewPasswordViewController.swift */; };
+		D4E5F4FD2810B3BA00AA4C11 /* NewPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E5F4FB2810B3BA00AA4C11 /* NewPasswordViewController.xib */; };
+		D4E5F50E2810C8D900AA4C11 /* LogoColor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E5F50D2810C8D900AA4C11 /* LogoColor.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86164F50614177F03DA396DF /* Pods_DailyNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54F2D0FC947E98FDE0AF680 /* Pods-DailyNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyNews.release.xcconfig"; path = "Target Support Files/Pods-DailyNews/Pods-DailyNews.release.xcconfig"; sourceTree = "<group>"; };
 		D49253E1280AF0BD00E98E9F /* DailyNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49253E4280AF0BD00E98E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D49253E6280AF0BD00E98E9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D49253E8280AF0BD00E98E9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D49253EB280AF0BD00E98E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D49253ED280AF0CA00E98E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D49253F0280AF0CA00E98E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D49253F2280AF0CA00E98E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D49253FA280AF12400E98E9F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D49253FB280AF12400E98E9F /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		D4925403280AF40800E98E9F /* MainTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTBC.swift; sourceTree = "<group>"; };
+		D4925407280AF45500E98E9F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D4925408280AF45500E98E9F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		D492540C280AF46F00E98E9F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D492540D280AF46F00E98E9F /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		D4925411280AF48A00E98E9F /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		D4925412280AF48A00E98E9F /* BookmarkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookmarkViewController.xib; sourceTree = "<group>"; };
+		D4925416280AF49B00E98E9F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D4925417280AF49B00E98E9F /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		D492541D280D25D000E98E9F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		D492541E280D25D000E98E9F /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		D4E5F4E9280FD40100AA4C11 /* buttonColor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = buttonColor.xcassets; sourceTree = "<group>"; };
+		D4E5F4EE28109CF100AA4C11 /* ResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetViewController.swift; sourceTree = "<group>"; };
+		D4E5F4EF28109CF100AA4C11 /* ResetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetViewController.xib; sourceTree = "<group>"; };
+		D4E5F4F42810A84D00AA4C11 /* VerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyViewController.swift; sourceTree = "<group>"; };
+		D4E5F4F52810A84D00AA4C11 /* VerifyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerifyViewController.xib; sourceTree = "<group>"; };
+		D4E5F4FA2810B3BA00AA4C11 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
+		D4E5F4FB2810B3BA00AA4C11 /* NewPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPasswordViewController.xib; sourceTree = "<group>"; };
+		D4E5F50D2810C8D900AA4C11 /* LogoColor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LogoColor.xcassets; sourceTree = "<group>"; };
+		D8EE9E88F29AD309E5BFACF6 /* Pods-DailyNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyNews.debug.xcconfig"; path = "Target Support Files/Pods-DailyNews/Pods-DailyNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +71,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A83E12DE23EC10BD0FF28B6 /* Pods_DailyNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		070915B63E5514694AA2B7F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8EE9E88F29AD309E5BFACF6 /* Pods-DailyNews.debug.xcconfig */,
+				C54F2D0FC947E98FDE0AF680 /* Pods-DailyNews.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6AB55EAF5F661E38396B83D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86164F50614177F03DA396DF /* Pods_DailyNews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D49253D8280AF0BD00E98E9F = {
 			isa = PBXGroup;
 			children = (
 				D49253E3280AF0BD00E98E9F /* DailyNews */,
 				D49253E2280AF0BD00E98E9F /* Products */,
+				070915B63E5514694AA2B7F6 /* Pods */,
+				6AB55EAF5F661E38396B83D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +116,105 @@
 		D49253E3280AF0BD00E98E9F /* DailyNews */ = {
 			isa = PBXGroup;
 			children = (
+				D4E5F4E8280FD3DC00AA4C11 /* Extra */,
+				D4E5F4ED28109C9100AA4C11 /* Model */,
+				D4E5F4EC28109C4900AA4C11 /* View */,
+				D49253F9280AF10B00E98E9F /* Controllers */,
 				D49253E4280AF0BD00E98E9F /* AppDelegate.swift */,
-				D49253E6280AF0BD00E98E9F /* SceneDelegate.swift */,
-				D49253E8280AF0BD00E98E9F /* ViewController.swift */,
-				D49253EA280AF0BD00E98E9F /* Main.storyboard */,
 				D49253ED280AF0CA00E98E9F /* Assets.xcassets */,
 				D49253EF280AF0CA00E98E9F /* LaunchScreen.storyboard */,
 				D49253F2280AF0CA00E98E9F /* Info.plist */,
 			);
 			path = DailyNews;
+			sourceTree = "<group>";
+		};
+		D49253F9280AF10B00E98E9F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D4925401280AF33700E98E9F /* Tabbar */,
+				D4E5F5012810C29E00AA4C11 /* Register */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D4925401280AF33700E98E9F /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				D4925402280AF34400E98E9F /* TabbarControllers */,
+				D4925403280AF40800E98E9F /* MainTBC.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		D4925402280AF34400E98E9F /* TabbarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D4925407280AF45500E98E9F /* HomeViewController.swift */,
+				D492540C280AF46F00E98E9F /* SearchViewController.swift */,
+				D4925411280AF48A00E98E9F /* BookmarkViewController.swift */,
+				D4925416280AF49B00E98E9F /* SettingsViewController.swift */,
+			);
+			path = TabbarControllers;
+			sourceTree = "<group>";
+		};
+		D4E5F4E8280FD3DC00AA4C11 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				D4E5F4E9280FD40100AA4C11 /* buttonColor.xcassets */,
+				D4E5F50D2810C8D900AA4C11 /* LogoColor.xcassets */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		D4E5F4EC28109C4900AA4C11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4E5F50C2810C7FF00AA4C11 /* Tabbar */,
+				D4E5F5002810C28F00AA4C11 /* Register */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4E5F4ED28109C9100AA4C11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4E5F5002810C28F00AA4C11 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D492541E280D25D000E98E9F /* SignInViewController.xib */,
+				D49253FB280AF12400E98E9F /* SignUpViewController.xib */,
+				D4E5F4EF28109CF100AA4C11 /* ResetViewController.xib */,
+				D4E5F4F52810A84D00AA4C11 /* VerifyViewController.xib */,
+				D4E5F4FB2810B3BA00AA4C11 /* NewPasswordViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		D4E5F5012810C29E00AA4C11 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D492541D280D25D000E98E9F /* SignInViewController.swift */,
+				D49253FA280AF12400E98E9F /* SignUpViewController.swift */,
+				D4E5F4EE28109CF100AA4C11 /* ResetViewController.swift */,
+				D4E5F4F42810A84D00AA4C11 /* VerifyViewController.swift */,
+				D4E5F4FA2810B3BA00AA4C11 /* NewPasswordViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		D4E5F50C2810C7FF00AA4C11 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				D4925408280AF45500E98E9F /* HomeViewController.xib */,
+				D492540D280AF46F00E98E9F /* SearchViewController.xib */,
+				D4925412280AF48A00E98E9F /* BookmarkViewController.xib */,
+				D4925417280AF49B00E98E9F /* SettingsViewController.xib */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D49253F5280AF0CA00E98E9F /* Build configuration list for PBXNativeTarget "DailyNews" */;
 			buildPhases = (
+				F6034052BDD51673D91C6A14 /* [CP] Check Pods Manifest.lock */,
 				D49253DD280AF0BD00E98E9F /* Sources */,
 				D49253DE280AF0BD00E98E9F /* Frameworks */,
 				D49253DF280AF0BD00E98E9F /* Resources */,
+				795F81331B84D808E49618A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,36 +276,88 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4925420280D25D000E98E9F /* SignInViewController.xib in Resources */,
 				D49253F1280AF0CA00E98E9F /* LaunchScreen.storyboard in Resources */,
+				D4E5F4FD2810B3BA00AA4C11 /* NewPasswordViewController.xib in Resources */,
+				D492540F280AF46F00E98E9F /* SearchViewController.xib in Resources */,
+				D4925414280AF48A00E98E9F /* BookmarkViewController.xib in Resources */,
 				D49253EE280AF0CA00E98E9F /* Assets.xcassets in Resources */,
-				D49253EC280AF0BD00E98E9F /* Main.storyboard in Resources */,
+				D49253FD280AF12400E98E9F /* SignUpViewController.xib in Resources */,
+				D4E5F4F128109CF100AA4C11 /* ResetViewController.xib in Resources */,
+				D4E5F50E2810C8D900AA4C11 /* LogoColor.xcassets in Resources */,
+				D4925419280AF49B00E98E9F /* SettingsViewController.xib in Resources */,
+				D492540A280AF45500E98E9F /* HomeViewController.xib in Resources */,
+				D4E5F4EA280FD40100AA4C11 /* buttonColor.xcassets in Resources */,
+				D4E5F4F72810A84D00AA4C11 /* VerifyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		795F81331B84D808E49618A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyNews/Pods-DailyNews-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyNews/Pods-DailyNews-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DailyNews/Pods-DailyNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6034052BDD51673D91C6A14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D49253DD280AF0BD00E98E9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D49253E9280AF0BD00E98E9F /* ViewController.swift in Sources */,
 				D49253E5280AF0BD00E98E9F /* AppDelegate.swift in Sources */,
-				D49253E7280AF0BD00E98E9F /* SceneDelegate.swift in Sources */,
+				D4E5F4F028109CF100AA4C11 /* ResetViewController.swift in Sources */,
+				D492540E280AF46F00E98E9F /* SearchViewController.swift in Sources */,
+				D4E5F4F62810A84D00AA4C11 /* VerifyViewController.swift in Sources */,
+				D4925418280AF49B00E98E9F /* SettingsViewController.swift in Sources */,
+				D4E5F4FC2810B3BA00AA4C11 /* NewPasswordViewController.swift in Sources */,
+				D49253FC280AF12400E98E9F /* SignUpViewController.swift in Sources */,
+				D492541F280D25D000E98E9F /* SignInViewController.swift in Sources */,
+				D4925404280AF40800E98E9F /* MainTBC.swift in Sources */,
+				D4925413280AF48A00E98E9F /* BookmarkViewController.swift in Sources */,
+				D4925409280AF45500E98E9F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D49253EA280AF0BD00E98E9F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D49253EB280AF0BD00E98E9F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D49253EF280AF0CA00E98E9F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +487,7 @@
 		};
 		D49253F6280AF0CA00E98E9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8EE9E88F29AD309E5BFACF6 /* Pods-DailyNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +507,7 @@
 		};
 		D49253F7280AF0CA00E98E9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C54F2D0FC947E98FDE0AF680 /* Pods-DailyNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
