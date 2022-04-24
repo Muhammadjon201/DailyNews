@@ -17,7 +17,7 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var showPassImg: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = ""
         // Do any additional setup after loading the view.
     }
     
@@ -36,7 +36,8 @@ class SignInViewController: UIViewController {
   
     
     @IBAction func btnPressed(_ sender: Any) {
-        
+        let vc = MainTBC(nibName: "MainTBC", bundle: nil)
+        navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func showPassword(_ sender: Any) {
         if check{
@@ -59,6 +60,8 @@ class SignInViewController: UIViewController {
     }
     @IBAction func forgerPressed(_ sender: Any) {
         let vc = ResetViewController(nibName: "ResetViewController", bundle: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
+        
     }
+    
 }

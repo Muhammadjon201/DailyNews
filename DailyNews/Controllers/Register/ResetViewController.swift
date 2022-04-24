@@ -12,14 +12,14 @@ class ResetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = ""
-        self.navigationItem.setHidesBackButton(true, animated: true)
+        //self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     // Hide navigation Bar..
     
     @IBAction func resetPressed(_ sender: Any) {
         let vc = VerifyViewController(nibName: "VerifyViewController", bundle: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 

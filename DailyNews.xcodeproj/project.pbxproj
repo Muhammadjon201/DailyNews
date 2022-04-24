@@ -32,6 +32,13 @@
 		D4E5F4FC2810B3BA00AA4C11 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F4FA2810B3BA00AA4C11 /* NewPasswordViewController.swift */; };
 		D4E5F4FD2810B3BA00AA4C11 /* NewPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E5F4FB2810B3BA00AA4C11 /* NewPasswordViewController.xib */; };
 		D4E5F50E2810C8D900AA4C11 /* LogoColor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E5F50D2810C8D900AA4C11 /* LogoColor.xcassets */; };
+		D4E5F51E2813492400AA4C11 /* CategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F51C2813492400AA4C11 /* CategoryTVC.swift */; };
+		D4E5F51F2813492400AA4C11 /* CategoryTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E5F51D2813492400AA4C11 /* CategoryTVC.xib */; };
+		D4E5F5242813520D00AA4C11 /* CatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F5222813520D00AA4C11 /* CatCollectionViewCell.swift */; };
+		D4E5F5252813520D00AA4C11 /* CatCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E5F5232813520D00AA4C11 /* CatCollectionViewCell.xib */; };
+		D4E5F529281357F900AA4C11 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F528281357F900AA4C11 /* Data.swift */; };
+		D4E5F52D2814A66A00AA4C11 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F52B2814A66A00AA4C11 /* TopViewController.swift */; };
+		D4E5F52E2814A66A00AA4C11 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E5F52C2814A66A00AA4C11 /* TopViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +70,13 @@
 		D4E5F4FA2810B3BA00AA4C11 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
 		D4E5F4FB2810B3BA00AA4C11 /* NewPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPasswordViewController.xib; sourceTree = "<group>"; };
 		D4E5F50D2810C8D900AA4C11 /* LogoColor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LogoColor.xcassets; sourceTree = "<group>"; };
+		D4E5F51C2813492400AA4C11 /* CategoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTVC.swift; sourceTree = "<group>"; };
+		D4E5F51D2813492400AA4C11 /* CategoryTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTVC.xib; sourceTree = "<group>"; };
+		D4E5F5222813520D00AA4C11 /* CatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCollectionViewCell.swift; sourceTree = "<group>"; };
+		D4E5F5232813520D00AA4C11 /* CatCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatCollectionViewCell.xib; sourceTree = "<group>"; };
+		D4E5F528281357F900AA4C11 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		D4E5F52B2814A66A00AA4C11 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		D4E5F52C2814A66A00AA4C11 /* TopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
 		D8EE9E88F29AD309E5BFACF6 /* Pods-DailyNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyNews.debug.xcconfig"; path = "Target Support Files/Pods-DailyNews/Pods-DailyNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,8 +145,11 @@
 		D49253F9280AF10B00E98E9F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D4E5F5132813484F00AA4C11 /* CollectionCell */,
+				D4E5F5122813484500AA4C11 /* TableCell */,
 				D4925401280AF33700E98E9F /* Tabbar */,
 				D4E5F5012810C29E00AA4C11 /* Register */,
+				D4E5F52B2814A66A00AA4C11 /* TopViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +186,9 @@
 		D4E5F4EC28109C4900AA4C11 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D4E5F52C2814A66A00AA4C11 /* TopViewController.xib */,
+				D4E5F5112813483A00AA4C11 /* CollectionCell */,
+				D4E5F5102813482300AA4C11 /* TableCell */,
 				D4E5F50C2810C7FF00AA4C11 /* Tabbar */,
 				D4E5F5002810C28F00AA4C11 /* Register */,
 			);
@@ -178,6 +198,7 @@
 		D4E5F4ED28109C9100AA4C11 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D4E5F528281357F900AA4C11 /* Data.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,6 +236,38 @@
 				D4925417280AF49B00E98E9F /* SettingsViewController.xib */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		D4E5F5102813482300AA4C11 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				D4E5F51D2813492400AA4C11 /* CategoryTVC.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		D4E5F5112813483A00AA4C11 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				D4E5F5232813520D00AA4C11 /* CatCollectionViewCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		D4E5F5122813484500AA4C11 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				D4E5F51C2813492400AA4C11 /* CategoryTVC.swift */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		D4E5F5132813484F00AA4C11 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				D4E5F5222813520D00AA4C11 /* CatCollectionViewCell.swift */,
+			);
+			path = CollectionCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +337,12 @@
 				D49253EE280AF0CA00E98E9F /* Assets.xcassets in Resources */,
 				D49253FD280AF12400E98E9F /* SignUpViewController.xib in Resources */,
 				D4E5F4F128109CF100AA4C11 /* ResetViewController.xib in Resources */,
+				D4E5F52E2814A66A00AA4C11 /* TopViewController.xib in Resources */,
 				D4E5F50E2810C8D900AA4C11 /* LogoColor.xcassets in Resources */,
+				D4E5F51F2813492400AA4C11 /* CategoryTVC.xib in Resources */,
 				D4925419280AF49B00E98E9F /* SettingsViewController.xib in Resources */,
 				D492540A280AF45500E98E9F /* HomeViewController.xib in Resources */,
+				D4E5F5252813520D00AA4C11 /* CatCollectionViewCell.xib in Resources */,
 				D4E5F4EA280FD40100AA4C11 /* buttonColor.xcassets in Resources */,
 				D4E5F4F72810A84D00AA4C11 /* VerifyViewController.xib in Resources */,
 			);
@@ -344,14 +400,18 @@
 				D49253E5280AF0BD00E98E9F /* AppDelegate.swift in Sources */,
 				D4E5F4F028109CF100AA4C11 /* ResetViewController.swift in Sources */,
 				D492540E280AF46F00E98E9F /* SearchViewController.swift in Sources */,
+				D4E5F5242813520D00AA4C11 /* CatCollectionViewCell.swift in Sources */,
 				D4E5F4F62810A84D00AA4C11 /* VerifyViewController.swift in Sources */,
 				D4925418280AF49B00E98E9F /* SettingsViewController.swift in Sources */,
 				D4E5F4FC2810B3BA00AA4C11 /* NewPasswordViewController.swift in Sources */,
+				D4E5F529281357F900AA4C11 /* Data.swift in Sources */,
 				D49253FC280AF12400E98E9F /* SignUpViewController.swift in Sources */,
+				D4E5F52D2814A66A00AA4C11 /* TopViewController.swift in Sources */,
 				D492541F280D25D000E98E9F /* SignInViewController.swift in Sources */,
 				D4925404280AF40800E98E9F /* MainTBC.swift in Sources */,
 				D4925413280AF48A00E98E9F /* BookmarkViewController.swift in Sources */,
 				D4925409280AF45500E98E9F /* HomeViewController.swift in Sources */,
+				D4E5F51E2813492400AA4C11 /* CategoryTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

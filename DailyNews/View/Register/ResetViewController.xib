@@ -91,7 +91,7 @@
     <resources>
         <image name="newsLogo 1" width="90" height="90"/>
         <namedColor name="Button">
-            <color red="0.92918360229999997" green="0.78599852319999997" blue="0.37026211619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.92900002002716064" green="0.78600001335144043" blue="0.37000000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

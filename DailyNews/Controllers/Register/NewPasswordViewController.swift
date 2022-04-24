@@ -19,7 +19,7 @@ class NewPasswordViewController: UIViewController {
     @IBOutlet weak var showImg2: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = ""
         // Do any additional setup after loading the view.
     }
 
@@ -48,7 +48,7 @@ class NewPasswordViewController: UIViewController {
 
     @IBAction func goHomePressed(_ sender: Any) {
         if newPsw.text == confirmpsw.text && !newPsw.text!.isEmpty && !confirmpsw.text!.isEmpty{
-            let vc = HomeViewController(nibName: "HomeViewController", bundle: nil)
+            let vc = MainTBC(nibName: "MainTBC", bundle: nil)
             navigationController?.pushViewController(vc, animated: true)
         }
     }

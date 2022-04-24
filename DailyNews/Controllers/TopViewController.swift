@@ -1,21 +1,20 @@
 //
-//  SearchVViewController.swift
+//  TopViewController.swift
 //  DailyNews
 //
-//  Created by Muhammadjon Mamarasulov on 4/16/22.
+//  Created by Muhammadjon Mamarasulov on 4/24/22.
 //
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class TopViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.navigationItem.setHidesBackButton(true, animated: true)
+
         // Do any additional setup after loading the view.
     }
-    
-   
+
 
     /*
     // MARK: - Navigation

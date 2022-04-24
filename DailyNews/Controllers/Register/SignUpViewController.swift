@@ -42,10 +42,10 @@ class SignUpViewController: UIViewController {
     @IBAction func eyeImgPressed(_ sender: Any) {
         if check1{
             passwordTxtf.isSecureTextEntry = true
-            eyeImage.setImage(UIImage(systemName: "eye.fill"), for: .normal)
+            eyeImage.setImage(UIImage(systemName: "eye.slash.fill"), for: .normal)
         }else{
             passwordTxtf.isSecureTextEntry = false
-            eyeImage.setImage(UIImage(systemName: "eye.slash.fill"), for: .normal)
+            eyeImage.setImage(UIImage(systemName: "eye.fill"), for: .normal)
         }
         check1 = !check1
     }

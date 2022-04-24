@@ -18,12 +18,22 @@ var window: UIWindow?
         
         IQKeyboardManager.shared.enable = true
         
+        navigationBarSettings()
+        
         window = UIWindow()
         let vc = SignInViewController(nibName: "SignInViewController", bundle: nil)
         let nc = UINavigationController(rootViewController: vc)
         window?.rootViewController = nc
         window?.makeKeyAndVisible()
         return true
+    }
+    
+    // This is Navigation Bar settings..
+
+    func navigationBarSettings(){
+        UINavigationBar.appearance().tintColor = UIColor(named: "Button")
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().shadowImage = UIImage()
     }
 
 }
