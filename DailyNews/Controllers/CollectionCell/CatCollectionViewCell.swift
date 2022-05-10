@@ -16,8 +16,9 @@ class CatCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         myView.layer.cornerRadius = 10
+       
     }
-
+    
     func updateCell(item: Data){
         myLbl.text = item.name
         //myView.isHidden = !item.isSelect

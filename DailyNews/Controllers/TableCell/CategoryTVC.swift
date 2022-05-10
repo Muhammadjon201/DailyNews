@@ -18,6 +18,13 @@ class CategoryTVC: UITableViewCell {
         myCollection.dataSource = self
         myCollection.register(UINib(nibName: "CatCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CatCollectionViewCell")
         self.myCollection.contentInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumInteritemSpacing = 5
+        layout.minimumLineSpacing = 5
+        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        self.myCollection.collectionViewLayout = layout
     }
     
     var data:[Data] = [
@@ -26,6 +33,8 @@ class CategoryTVC: UITableViewCell {
         Data(name: "World", isSelect: false),
         Data(name: "Politics", isSelect: false),
         Data(name: "Entertainment", isSelect: false)
+        //Data(name: "Grade", isSelect: false)
+    
     ]
     
 }
@@ -51,7 +60,7 @@ extension CategoryTVC: UICollectionViewDelegate, UICollectionViewDataSource, UIC
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: UIScreen.main.bounds.width/4 - 10 * 1.9, height: 35)
+        CGSize(width: UIScreen.main.bounds.width/3 - 1 * 1.9, height: 35)
     }
     
 

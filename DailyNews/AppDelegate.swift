@@ -33,7 +33,7 @@ var window: UIWindow?
     func navigationBarSettings(){
         UINavigationBar.appearance().tintColor = UIColor(named: "Button")
         UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().shadowImage = UIImage()
+        //UINavigationBar.appearance().shadowImage = UIImage()
     }
 
 }
