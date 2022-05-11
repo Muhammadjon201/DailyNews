@@ -10,7 +10,9 @@ import UIKit
 class HomeViewController: UIViewController {
     @IBOutlet weak var myTableView: UITableView!
     
-    var items : Array<PostList> = Array()
+    //var items : Array<PostList> = Array()
+    
+    var array = [PostList]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +28,12 @@ class HomeViewController: UIViewController {
         
         // tableView data..
         
-        items.append(PostList(title: "Campnou is best stadium in the world and it includes more than 80.000 people once. This is insane", image: "staduim", author: "by Leo Messi", category: "Entertainment"))
-        items.append(PostList(title: "This girl renawned world's most beautiful girl in 2022. She won this award third time in row", image: "girl", author: "by Jon Abraham", category: "World"))
-        items.append((PostList(title: "So many business owners moves to London in order to know London better. They think, London best city for living", image: "london", author: "by Peter Pen", category: "Business")))
-        items.append(PostList(title: "Red busses are already symbol of London city and millions of visitors come to London to see this bus", image: "bus", author: "by Federick Adam", category: "Tourism"))
-        items.append(PostList(title: "Uzbekistan celebrates November 2 as a national flag day. In this day, companies gave a one day vacation", image: "flag", author: "by Muhammadjon", category: "World"))
-        items.append(PostList(title: "The California Department of Fair Employment and Housing (DFEH) intends to file a lawsuit against Tesla alleging systematic racial discrimination and harassment", image: "eloncar", author: "by Elon Musk", category: "World"))
+        array.append(PostList(title: "Campnou is best stadium in the world and it includes more than 80.000 people once. This is insane", image: "staduim", author: "by Leo Messi", category: "Entertainment"))
+        array.append(PostList(title: "This girl renawned world's most beautiful girl in 2022. She won this award third time in row", image: "girl", author: "by Jon Abraham", category: "World"))
+        array.append((PostList(title: "So many business owners moves to London in order to know London better. They think, London best city for living", image: "london", author: "by Peter Pen", category: "Business")))
+        array.append(PostList(title: "Red busses are already symbol of London city and millions of visitors come to London to see this bus", image: "bus", author: "by Federick Adam", category: "Tourism"))
+        array.append(PostList(title: "Uzbekistan celebrates November 2 as a national flag day. In this day, companies gave a one day vacation", image: "flag", author: "by Muhammadjon", category: "World"))
+        array.append(PostList(title: "The California Department of Fair Employment and Housing (DFEH) intends to file a lawsuit against Tesla alleging systematic racial discrimination and harassment", image: "eloncar", author: "by Elon Musk", category: "World"))
     }
     
 
@@ -41,7 +43,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return array.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,7 +53,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         }else{
             guard let cell = myTableView.dequeueReusableCell(withIdentifier: "ContentTVC", for: indexPath) as? ContentTVC else{return UITableViewCell() }
             
-            let item = items[indexPath.row]
+            let item = array[indexPath.row]
             
             cell.contentImg.image = UIImage(named: item.image)
             cell.title.text = item.title
@@ -74,8 +76,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         tableView.deselectRow(at: indexPath, animated: true)
         
         let vc = DescriptionViewController(nibName: "DescriptionViewController", bundle: nil)
-        vc.image = UIImage(named: items[indexPath.row])!
-        vc.title = items[indexPath.row]
+//        vc.image = UIImage(named: items[indexPath.row])
+//        vc.title = items[indexPath.row]
+        let item = array[indexPath.row]
+        vc.DescriptionLabel.text = array[indexPath.row].title
+        vc.image1.image = UIImage(named: array[indexPath.row].image)
+        
         self.navigationController?.pushViewController(vc, animated: true)
     }
 

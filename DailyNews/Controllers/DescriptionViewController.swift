@@ -13,15 +13,15 @@ class DescriptionViewController: UIViewController {
     @IBOutlet weak var image1: UIImageView!
     @IBOutlet weak var DescriptionLabel: UILabel!
     
-    var image = UIImage()
-    var title = String = 
-    
+//    var image = UIImage()
+//    var title = String =
+//
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationSettings()
-        image1.image = image
-        DescriptionLabel.text = title
+//        image1.image = image
+//        DescriptionLabel.text = title
     }
     
 
