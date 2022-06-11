@@ -105,7 +105,7 @@
                 <constraint firstItem="oDo-Ne-ZhN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bf2-BM-Lks"/>
                 <constraint firstItem="oDo-Ne-ZhN" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.9" id="sME-jP-UhO"/>
             </constraints>
-            <point key="canvasLocation" x="137.68115942028987" y="85.714285714285708"/>
+            <point key="canvasLocation" x="706" y="91"/>
         </view>
     </objects>
     <resources>

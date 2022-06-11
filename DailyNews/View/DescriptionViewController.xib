@@ -24,7 +24,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Rv-Xr-tZ0">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="2455.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="2514.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UT4-eJ-fhj">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
@@ -50,13 +50,13 @@
                                     </constraints>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vDL-hi-ZAi">
-                                    <rect key="frame" x="0.0" y="250" width="414" height="120"/>
+                                    <rect key="frame" x="0.0" y="250" width="414" height="179"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NK2-zj-jJL">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="179"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This should be long text and it will have content and  will provide with huge themes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GW-Q3-DfJ">
-                                                    <rect key="frame" x="16" y="26" width="269" height="68.5"/>
+                                                    <rect key="frame" x="15" y="10" width="384" height="159"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -64,17 +64,16 @@
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="9GW-Q3-DfJ" firstAttribute="leading" secondItem="NK2-zj-jJL" secondAttribute="leading" constant="16" id="ZmA-CU-3jm"/>
-                                                <constraint firstItem="9GW-Q3-DfJ" firstAttribute="centerY" secondItem="NK2-zj-jJL" secondAttribute="centerY" id="hm1-49-oLd"/>
+                                                <constraint firstAttribute="bottom" secondItem="9GW-Q3-DfJ" secondAttribute="bottom" constant="10" id="DVE-4k-9wB"/>
+                                                <constraint firstItem="9GW-Q3-DfJ" firstAttribute="top" secondItem="NK2-zj-jJL" secondAttribute="top" constant="10" id="Qbe-tK-4HG"/>
+                                                <constraint firstItem="9GW-Q3-DfJ" firstAttribute="leading" secondItem="NK2-zj-jJL" secondAttribute="leading" constant="15" id="mvm-dU-fkv"/>
+                                                <constraint firstAttribute="trailing" secondItem="9GW-Q3-DfJ" secondAttribute="trailing" constant="15" id="rE9-g1-UNI"/>
                                             </constraints>
                                         </view>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="120" id="2Ho-DH-axW"/>
-                                    </constraints>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rHD-Kd-Njk">
-                                    <rect key="frame" x="0.0" y="370" width="414" height="100"/>
+                                    <rect key="frame" x="0.0" y="429" width="414" height="100"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfO-c3-DHf">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
@@ -115,7 +114,7 @@
                                     </constraints>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WZR-EI-Lyi">
-                                    <rect key="frame" x="0.0" y="470" width="414" height="50"/>
+                                    <rect key="frame" x="0.0" y="529" width="414" height="50"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjF-t2-3In">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -174,7 +173,7 @@
                                     </constraints>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lVp-Td-h8E">
-                                    <rect key="frame" x="0.0" y="520" width="414" height="1935.5"/>
+                                    <rect key="frame" x="0.0" y="579" width="414" height="1935.5"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0p-RO-JA4">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="1935.5"/>
@@ -263,7 +262,7 @@ The other variation of the while loop, known as the repeat-while loop, performs 
                 <constraint firstAttribute="bottom" secondItem="Cev-bk-VzF" secondAttribute="bottom" id="Iqm-ex-DB4"/>
                 <constraint firstItem="6Rv-Xr-tZ0" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="wZu-uw-vFq"/>
             </constraints>
-            <point key="canvasLocation" x="402.89855072463769" y="141.96428571428569"/>
+            <point key="canvasLocation" x="661" y="131"/>
         </view>
     </objects>
     <resources>

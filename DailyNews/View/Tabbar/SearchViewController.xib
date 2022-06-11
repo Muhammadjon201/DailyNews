@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchVViewController" customModule="DailyNews" customModuleProvider="target">
             <connections>
+                <outlet property="searchLbl" destination="fZY-cl-zZp" id="Kmw-Nt-Yxe"/>
+                <outlet property="searchTableView" destination="tzI-XT-MsN" id="5hK-iM-sFh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,16 +20,34 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5m-JO-1go">
-                    <rect key="frame" x="80" y="289" width="207" height="164"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="fZY-cl-zZp">
+                    <rect key="frame" x="15" y="66" width="384" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="59e-xG-IhW"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tzI-XT-MsN">
+                    <rect key="frame" x="0.0" y="121" width="399" height="741"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tzI-XT-MsN" secondAttribute="bottom" id="0xt-cr-UvR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tzI-XT-MsN" secondAttribute="trailing" constant="15" id="2DG-NM-Ih7"/>
+                <constraint firstItem="fZY-cl-zZp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="DNh-Pe-RtU"/>
+                <constraint firstItem="tzI-XT-MsN" firstAttribute="top" secondItem="fZY-cl-zZp" secondAttribute="bottom" constant="15" id="Ig8-p7-qwD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fZY-cl-zZp" secondAttribute="trailing" constant="15" id="LoW-yV-VgW"/>
+                <constraint firstItem="tzI-XT-MsN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="S3F-Fg-zEc"/>
+                <constraint firstItem="fZY-cl-zZp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="22" id="xcP-PZ-OkJ"/>
+            </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
         </view>
     </objects>

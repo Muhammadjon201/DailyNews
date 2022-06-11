@@ -76,11 +76,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         tableView.deselectRow(at: indexPath, animated: true)
         
         let vc = DescriptionViewController(nibName: "DescriptionViewController", bundle: nil)
-//        vc.image = UIImage(named: items[indexPath.row])
-//        vc.title = items[indexPath.row]
+
         let item = array[indexPath.row]
-        vc.DescriptionLabel.text = array[indexPath.row].title
-        vc.image1.image = UIImage(named: array[indexPath.row].image)
+        
+        vc.loadViewIfNeeded()
+        vc.DescriptionLabel.text = item.title
+        vc.image1.image = UIImage(named: item.image)
         
         self.navigationController?.pushViewController(vc, animated: true)
     }

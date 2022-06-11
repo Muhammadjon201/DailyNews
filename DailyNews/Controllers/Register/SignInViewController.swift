@@ -37,7 +37,7 @@ class SignInViewController: UIViewController {
     
     @IBAction func btnPressed(_ sender: Any) {
         let vc = MainTBC(nibName: "MainTBC", bundle: nil)
-        navigationController?.pushViewController(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func showPassword(_ sender: Any) {
         if check{
